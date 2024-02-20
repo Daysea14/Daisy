@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script>
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+                if (this.hash !=="") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+    <div class="banner" id="home">
+
+
+
+        <div class="navbar">
+            <div class="logo"> MYSELF </div>
+            <ul>
+                <li><a href="#home">HOME </a></li>
+                <li><a href="#info">INFO </a></li>
+                <li><a href="#skills">SKILLS </a></li>
+                <li><a href="#experiences">EXPERIENCES </a></li>
+                <li><a href="#gallery">GALLERY </a></li>
+                <li><a href="#footer">FOOTER</a></li>
+
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1> My  Life </h1>
+            <p> For more info visit my website </p>
+
+            <div class="buttons">
+                <button type="button"><span></span> READ MORE </button>
+            </div>
+
+        </div>
+        
+    </div>
+
+
+    <!--This code is for info-->
+
+
+
+    <div class="Info" id="info">
+
+        <div class="section-content">
+
+            <div class="title">
+                <h2> MY INFO </h2>
+                <p>My name is Daisy Salao , 21 years old a 3rd year BSIT student in Phinma University of Iloilo</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+
+                    <div class="image-section">
+                        <img src="img/s1.jpg">
+                    </div>
+
+                    <div class="article">
+                        <h4> My Parents </h4>
+                        <p> My Mother's name is Elsa Salao, she is 63 years old. She is 
+                            a housewife. My mother is a very kind and helpful. I'm very 
+                            proud that she is my mother
+                        </br></br>
+
+                            My Father's name is Donato Salao Sr., he is 66 years old. He is 
+                            already deceased. He is a very strong and a helpful father.
+                            And i'm very proud also that he is my father.</p>
+                    </div>
+
+                    <div class="blog-view">
+                        <a href=""class="button">Read More</a>
+                    </div>
+
+                    <div class="posted-date">
+                        <p>Date Posted: August 18, 2023</p>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="image-section">
+                        <img src="img/s2.1.jpg">
+                    </div>
+
+                    <div class="article">
+                        <h4> My Sister's  </h4>
+                        <p> We are 6 in the family, namely Donna, Dyna, Diana, Dina, Danelle Louise.
+                            I am very happy that they are my ever supportive sisters. 
+                        </br></br>
+
+                            My oldest sister Donna is a housewife in hongkong, she takes care an old lady
+                        the mother of her boss. 
+                            My sister Dyna is also in Hong Kong she is taking good care a 2 children 
+                        that already schooling.
+                            My sister Diana is in Leon and she already have 2 kids who is in schooling.
+                            My sister Dina is already 25 who did not continue her schooling because of the 
+                        pandemic. She is staying in our house to help my mother in our little store and taking 
+                        good care the child of my sister Donna.
+                            My elder sister Danelle Louise is a 16 years old who graduated in grade 10 and 
+                        continueng her school in senior high.</p>
+                    </div>
+
+                    <div class="blog-view">
+                        <a href=""class="button">Read More</a>
+                    </div>
+
+                    <div class="posted-date">
+                        <p>Date Posted: August 18, 2023</p>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="image-section">
+                        <img src="img/s3.jpg">
+                    </div>
+
+                    <div class="article">
+                        <h4>  My Brother's </h4>
+                        <p> I have 4 brother's namely, Donie, Donato jr., Donald, Dave. They are my shiled
+                            and ever supportive brothers. </br></br>
+
+                            My oldest brother is Donie , he is in saudi with his wife, he is the one who 
+                            help me with my financial in school.
+                            My brother Donato or "onyok" in short is in the he is a PWD.
+                            My brother Donald is an OFW in Micronesia.
+                            My brother Dave is currently working in Leganes about the shop called Turbulence.</p>
+                    </div>
+
+
+                    <div class="blog-view">
+                        <a href=""class="button">Read More</a>
+                    </div>
+
+
+
+                    <div class="posted-date">
+                        <p>Date Posted: August 18, 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--This code is for skills-->
+
+
+    <div class="Skills" id="skills">
+        <div class="heading">
+            <h1> SKILLS </h1>
+
+        </div>
+
+
+        <div class="container">
+            <section class="about">
+                <div class="about-image">
+                    <img src="img/m24.jpeg">
+                </div>
+
+
+                <div class="skills-content">
+                    <h2> Skills of Mine </h2>
+                    <p> I love to re react some tiktok dance steps because i love to dance.
+                    </p>
+
+                        <a href="#" class="read-more"> Read More</a>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+
+<!--This code is for experiences-->
+
+<div class="Experiences" id="experiences"></div>
+<div class="wrapper">
+    <h1> TESTIMONIALS </h1>
+    <h5> The Writer's Review </h5>
+
+    <div class="cards">
+        <div class="text">
+        <img src="img/m18.jpeg">
+        <p>  At the Billboard Music Awards Sunday night, South Korea's seven-piece 
+            boy band BTS made history when they become the first k-pop band to win 
+            the Top Social Artist award—beating Justin Bieber, Selena Gomez, and 
+            Ariana Grande to do it. </p>
+        <h2> "Alyssia Bailey" </h2>
+        <h4> News and Strategy Editor at ELLE.com</h4>
+        </div>
+
+        <div class="text">
+            <img src="img/m1.jpg">
+            <p> Just over a year ago, Tomorrow X Together was introduced to the world to begin 
+                a new K-pop legacy that will take a new, unexpected twist with the release of their 
+                upcoming album The Dream Chapter: Eternity.  </p>
+            <h2> "Jeff Benjamin" </h2>
+            <h4> Senior Contributor </h4>
+        </div>
+
+        <div class="text">
+            <img src="img/m10.jpg">
+            <p> With the number of achievements under their belt, it’s hard to believe that 
+                South Korean boy group ENHYPEN made their debut only two years ago.  </p>
+            <h2> "Rappler" </h2>
+            <h4> Philippines' leading digital media company </h4>
+        </div>
+
+
+
+    </div>
+ </div>
+</div>
+
+
+<!--Gallery Page--->
+
+    <div class="gallery" id="gallery">
+
+        <input type="radio" name="photos" id="check1" checked>
+        <input type="radio" name="photos" id="check2"> 
+        <input type="radio" name="photos" id="check3"> 
+        <input type="radio" name="photos" id="check4">
+        
+        <div class="gallery-container">
+            <h1> OUR PHOTO GALLERY </h1>
+            <div class="top-content">
+                <h3> Photo Gallery </h3>
+                <label for="check1"> All Photos </label>
+                <label for="check2"> Family </label>
+                <label for="check3"> Friends </label>
+                <label for="check4"> Mirror Shots </label>
+            </div>
+
+            <div class="photo-gallery">
+
+                <div class="pic Events">
+                    <img src="img/m5.jpg">
+                </div>
+
+                <div class="pic Bonding">
+                    <img src="img/m4.jpg">
+                </div>
+
+                <div class="pic Outing">
+                    <img src="img/m23.jpg">
+                </div>
+
+                <div class="pic Events">
+                    <img src="img/m8.jpg">
+                </div>
+
+                <div class="pic Bonding">
+                    <img src="img/m6.jpg">
+                </div>
+
+                <div class="pic Outing">
+                    <img src="img/m2.jpg">
+                </div>
+
+                <div class="pic Events">
+                    <img src="img/m16.jpeg">
+                </div>
+
+                <div class="pic Bonding">
+                    <img src="img/m21.jpeg">
+                </div>
+
+                <div class="pic Outing">
+                    <img src="img/m11.jpg">
+                </div>
+
+                <div class="pic Events">
+                    <img src="img/s17.jpeg">
+                </div>
+
+                <div class="pic Bonding">
+                    <img src="img/m13.jpg">
+                </div>
+
+                <div class="pic Outing">
+                    <img src="img/m12.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+<!--this is footer-->
+
+<div class="footer-basic">
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+
+        </div>
+
+        <p class="copyright"> Managed by BIGHIT Entertainment @2013</p>
+    </footer>
+</div>
+
+
+
+
+<a href="#home" id="myBtn" title="Go to top">TOP</a>
+
+<script>
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+mybutton.style.display = "block";
+} else {
+    mybutton.style.display ="none";
+}
+} 
+</script>
+
+</body>
+</html>

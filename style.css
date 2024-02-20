@@ -1,0 +1,715 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(245, 186, 235);
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+#myBtn:hover {
+    background-color: rgb(248, 184, 246);
+    color: whitesmoke;
+}
+
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/m3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+.logo:hover{
+    color: lightpink;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{                                                                                   
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: lightpink;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.content button{
+    width: 200px;
+    padding: 15px 0;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-family: bold;
+    border: 2px solid rgb(197, 7, 222);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: rgb(75, 1, 72);
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+}
+
+/* this is the css info */ 
+
+.blog-section{
+    width: 100%;
+
+}
+
+.blog-section .section-content{
+    width: 85%;
+    margin: 20px auto;
+
+}
+
+.blog-section .section-content .title{
+
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.blog-section .blog-section .title h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: lavenderblush;
+
+}
+
+.blog-section .section-content .title p{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(197, 7, 222);
+    margin-top: 10px;
+
+}
+
+.blog-section .section-content .cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    margin: 25px auto;
+
+}
+
+.blog-section .section-content .cards .card{
+    width: 100%;
+    background-color: lavender;
+    position: relative;
+    box-shadow: 10px 10px 5px #aaaaaa;
+
+}
+
+.blog-section .section-content .cards .card img{
+    width: 50%;
+    height: 200px;
+}
+
+.blog-section .section-content .cards .card .article{
+    padding: 15px 20px;
+}
+
+.blog-section .section-content .cards .card .article h4{
+    font-size: 24px;
+    color: rgb(197, 7, 222);
+
+}
+
+.blog-section .section-content .cards .card .article p{
+    font-size: 14px;
+    color: black;
+    margin: 10px 0px;
+    font-family: tahoma;
+}
+
+.blog-section .section-content .cards .card .blog-view{
+    padding-bottom: 20px;
+}
+
+.blog-section .section-content .cards .card .blog-view a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: lavenderblush;
+    padding: 8px 15px;
+    margin-left: 10px;
+    color: black;
+
+}
+
+.blog-section .section-content .cards .card .posted-date p{
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: rgb(208, 158, 239);
+    padding: 6px 15px;
+}
+
+@media screen and (max-width: 992px){
+    .blog-section .section-content .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .blog-section .section-content .cards{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* this is the css of skills */
+.about section{
+    width: 100%;
+
+}
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.heading h1{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 25px;
+    position: relative;
+}
+.heading h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(197, 7, 222);
+}
+.heading p{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 35px;
+}
+
+.container{
+    width: 90%;
+    margin-bottom: 100px;
+    padding: 50px;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.about-image:hover img{
+    transform: scale(1,2);
+}
+.about-content{
+    flex: 1;
+}
+.about-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: rgb(197, 7, 222);
+}
+.about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+}
+.about-content .read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: rgb(208, 158, 239);
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+.about-content .read-more:hover{
+    background-color: rgb(197, 7, 222);
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    .heading{
+        padding: 0px 20px;
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .about-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .about-content{
+        padding: 0px;
+        font-size: 16px;
+    }
+
+    .about-content .read-more{
+        font-size: 16px;
+    }
+}
+
+/* this is the css of gallery */
+
+.gallery{
+    margin-bottom: 200px;
+    padding-top: 10px;
+}
+
+.gallery input{
+    display: none;
+}
+.gallery .gallery-container{
+    width: 100%;
+    text-align: center;
+}
+
+.gallery h1{
+    font-weight: normal;
+    position: relative;
+    font-size: 35px;
+    margin: 40px 0;
+}
+
+.gallery h1::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: rgb(197, 7, 222);
+    bottom: -10px;
+    left: 50%;
+}
+
+@keyframes animate {
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+
+.gallery .top-content{
+    background-color: rgb(208, 158, 239);
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px black;
+}
+
+.gallery h3{
+    height: 100%;
+    line-height: 60px;
+    padding: 0 50px;
+    background-color: white;
+    color: rgb(19, 13, 3)
+}
+
+.gallery label{
+    display: inline-block;
+    height: 100%;
+    margin: 0 20px;
+    line-height: 60px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    transition: color .5s;
+}
+
+.gallery label:hover{
+    color: whitesmoke;
+}
+
+.gallery .photo-gallery{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.gallery .pic{
+    position: relative;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.gallery .pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.gallery .pic::before{
+    content: "PHOTO GALLERY";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 100px;
+    opacity: 0;
+    transform: .3s;
+    transition-delay: .2s;
+    z-index: 1;
+}
+
+.gallery .pic:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 0;
+    background-color: rgba(18, 62, 182, 0.4);
+    transform: .3s;
+}
+
+.gallery .pic:hover::after{
+    height: 100%;
+}
+
+.gallery .pic:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+.gallery #check1:checked ~ .gallery-container .photo-gallery .pic{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transform: .5s;
+}
+
+.gallery #check2:checked ~ .gallery-container .photo-gallery .Events{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+
+.gallery #check2:checked ~ .gallery-container .photo-gallery .Bonding,
+.gallery #check2:checked ~ .gallery-container .photo-gallery .Outing{
+    opacity: 1;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+
+.gallery #check3:checked ~ .gallery-container .photo-gallery .Bonding{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+
+}
+
+.gallery #check3:checked ~ .gallery-container .photo-gallery .Events,
+.gallery #check3:checked ~ .gallery-container .photo-gallery .Outing{
+    opacity: 1;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+
+.gallery #check4:checked ~ .gallery-container .photo-gallery .Bonding{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+
+.gallery #check4:checked ~ .gallery-container .photo-gallery .Events,
+.gallery #check4:checked ~ .gallery-container .photo-gallery .Bonding{
+    opacity: 1;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+
+@media screen and (max-width: 992px){
+
+    .gallery .photo-gallery{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .gallery h1{
+        font-weight: normal;
+        position: relative;
+        font-size: 20px;
+        margin: 40px 0;
+    }
+
+    .gallery h3{
+        display: none;
+    }
+
+    .gallery label{
+        height: 100%;
+        font-size: 11px;
+        color: rgb(197, 7, 222);
+        cursor: pointer;
+        transition: color .5s;
+    }
+
+    .gallery label:hover{
+        color: black;
+    }
+
+    .gallery .photo-gallery{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* css for testimony */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    /**** designing container for our testimonial cards layout ****/
+    background: linear-gradient(90deg, #d29eec 0%, #e2a6e8 50%);
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'raleway' ,sans-serif;
+    color: #120202;
+}
+.wrapper h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: bold;
+    color: black;
+}
+.wrapper h5{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 0 auto;
+    margin-bottom: 65px;
+
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    margin: 0 auto;
+
+}
+.text{
+        width: 350px;
+        height: 350px;
+        border-radius: 20px;
+        margin: 5px;
+        padding: 20px 30px;
+        position: relative;
+        background: rgba(255,255,255,0.2);
+        box-shadow: 10px 20px 25px rgba(0,0,0,0.2);
+}
+.text img{
+    height: 90px;
+    width: 90px;
+    border: 2px solid #171717;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+}
+.text p{
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+.text h2{
+    font-weight: 500;
+    margin-bottom: 7px;
+    color: rgb(50, 2, 54);
+    font-family: bold;
+}
+.text h4{
+    color: #333;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* footer css */
+.footer-basic{
+    padding: 40px 0;
+    background-color: #efa7f6;
+    color: white;
+}
+.footer-basic .social{
+    text-align: center;
+    padding-bottom: 25px;
+}
+.footer-basic .social a{
+    font-size: 50px;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    border-radius: 100%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+.footer-basic .social a:hover{
+    opacity: 0.9;
+}
+.footer-basic .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 0;
+}
+
+    
